@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Le formulaire</title>
+    </head>
+    <body>
+        <form action="toto.php" method="post" >
+
+            <fieldset>
+             <legend> Votre identité </legend>
+               <ol>
+                    <li><label for="Nom">Nom :</label>
+                        <input type="text" name="Nom" size="20" maxlength="40" value="Nom" id="Nom" />
+                    </li>
+                    <li><label for="Prénom">Prénom :</label>
+                        <input type="text" name="Prénom" size="20" maxlength="40" value="Prénom" id="Prénom" />
+                    </li>
+                    <li><label for="Adresse mail">Adresse mail :</label>
+                        <input type="text" name="Adresse mail" size="20" maxlength="40" value="Adresse mail" id="Adresse mail" />
+                    </li>
+               </ol>
+            </fieldset>
+            <fieldset>
+             <legend>Adresse de livraison</legend>
+                <ol>
+                    <li>
+                        <label for="Adresse">Adresse :</label>
+                        <input type="text" name="Adresse" size="60" maxlength="30" id="Adresse" />
+                    </li>
+                    <li>
+                        <label for="Code postal">Code postal :</label>
+                        <input type="text" name="Code postal" size="20" maxlength="40" value="Code postal" id="Code postal" />
+                    </li>
+                    <li>
+                        <label for="Ville">Ville :</label>
+                        <input type="text" name="Ville" size="20" maxlength="40" value="Ville" id="Ville" />
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Informations de règlement</legend>
+                <ol>
+                    <li>
+                        <label for="CB">Type de carte bancaire :</label><br>
+                        <label for="VISA" class="inline">VISA</label>
+                        <input type="radio" name="CB" value="VISA" id="VISA" /><br>
+                        <label for="Mastercard" class="inline">Mastercard</label>
+                        <input type="radio" name="CB" value="Mastercard" id="Mastercard" /> 
+                    </li>
+                    <li>
+                        <label for="NCarte">Numéro de carte :</label>
+                        <input type="text" name="NCarte" size="20" maxlength="40" value="Numéro de carte" id="NCarte" />
+                    </li>
+                    <li>
+                        <label for="Code">Code de sécurité :</label>
+                        <input type="text" name="Code" size="20" maxlength="40" value="Code de sécurité" id="Code" />
+                    </li>
+                    <li>
+                        <label for="Titulaire">Nom du titulaire :</label>
+                        <input type="text" name="Titulaire" size="20" maxlength="40" value="Nom du titulaire" id="Titulaire" />
+                    </li>
+                </ol>
+            </fieldset>
+             <p>
+             <input type="submit" value="J'achète !" />
+             </p>
+            
+            </form>
+    </body>
+</html>
