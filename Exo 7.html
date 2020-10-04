@@ -6,64 +6,62 @@
     </head>
     <body>
         <form action="toto.php" method="post" >
-            <fieldset style="background-color:rgb(0, 115, 160) ;">
-             <legend style="background-color:rgb(0, 115, 160) ;">Votre identité</legend>
+            <fieldset style="background-color:#2574a9 ;">
+             <legend style="background-color:#2574a9 ;">Votre identité</legend>
                 <ol>
                     <li><label for="Nom">Nom :</label>
-                        <input type="text" name="Nom" size="20" maxlength="40" value="Nom" style="color: darkgray;" id="Nom" />
+                        <input type="text" name="Nom" size="20" maxlength="40" placeholder="Nom" id="Nom" />
                     </li>
                     <li><label for="Prénom">Prénom :</label>
-                        <input type="text" name="Prénom" size="20" maxlength="40" value="Prénom" style="color: darkgray;" id="Prénom" />
+                        <input type="text" name="Prénom" size="20" maxlength="40" placeholder="Prénom" id="Prénom" />
                     </li>
                     <li><label for="Adresse mail">Adresse mail :</label>
-                        <input type="text" name="Adresse mail" size="20" maxlength="40" value="Adresse mail" style="color: darkgray;" id="Adresse mail" />
+                        <input type="text" name="Adresse mail" size="20" maxlength="40" placeholder="Adresse mail" id="Adresse mail" />
                     </li>
                 </ol>
             </fieldset>
-            <fieldset style="background-color: purple;">
-             <legend style="background-color: purple;">Adresse de livraison</legend>
+            <fieldset style="background-color: #9a12b3;">
+             <legend style="background-color: #9a12b3;">Adresse de livraison</legend>
                 <ol>
                     <li>
                         <label for="Adresse">Adresse :</label>
-                        <input type="text" name="Adresse" size="60" maxlength="30" id="Adresse" />
+                        <textarea name="adresse" id="adresse" rows="5" cols="20"></textarea>
                     </li>
                     <li>
                         <label for="Code postal">Code postal :</label>
-                        <input type="text" name="Code postal" size="20" maxlength="40" value="Code postal" style="color:darkgray ;" id="Code postal" />
+                        <input type="text" name="Code postal" size="20" maxlength="40" placeholder="Code postal" id="Code postal" />
                     </li>
                     <li>
                         <label for="Ville">Ville :</label>
-                        <input type="text" name="Ville" size="20" maxlength="40" value="Ville" style="color: darkgray;" id="Ville" />
+                        <input type="text" name="Ville" size="20" maxlength="40" placeholder="Ville" id="Ville" />
                     </li>
                 </ol>
             </fieldset>
-            <fieldset style="background-color:crimson ;">
-                <legend style="background-color:crimson ;">Informations de règlement</legend>
+            <fieldset style="background-color:#db0a5b ;">
+                <legend style="background-color:#db0a5b ;">Informations de règlement</legend>
                 <ol>
                     <li>
                         <label for="CB">Type de carte bancaire :</label><br>
-                        <label for="VISA" class="inline">VISA</label>
-                        <input type="radio" name="CB" value="VISA" id="VISA" /><br>
-                        <label for="Mastercard" class="inline">Mastercard</label>
-                        <input type="radio" name="CB" value="Mastercard" id="Mastercard" /> 
+                        <input type="radio" name="CB" value="VISA" id="VISA" />
+                        <label for="VISA" class="inline">VISA</label><br>
+                        <input type="radio" name="CB" value="Mastercard" id="Mastercard" />
+                        <label for="Mastercard" class="inline">Mastercard</label> 
                     </li>
                     <li>
                         <label for="NCarte">Numéro de carte :</label>
-                        <input type="text" name="NCarte" size="20" maxlength="40" value="Numéro de carte" style="color: darkgray;" id="NCarte" />
+                        <input type="text" name="NCarte" size="20" maxlength="40" placeholder="Numéro de carte" id="NCarte" />
                     </li>
                     <li>
                         <label for="Code">Code de sécurité :</label>
-                        <input type="text" name="Code" size="20" maxlength="40" value="Code de sécurité" style="color: darkgray;" id="Code" />
+                        <input type="text" name="Code" size="20" maxlength="40" placeholder="Code de sécurité" id="Code" />
                     </li>
                     <li>
                         <label for="Titulaire">Nom du titulaire :</label>
-                        <input type="text" name="Titulaire" size="20" maxlength="40" value="Nom du titulaire" style="color: darkgray;" id="Titulaire" />
+                        <input type="text" name="Titulaire" size="20" maxlength="40" placeholder="Nom du titulaire" id="Titulaire" />
                     </li>
                 </ol>
             </fieldset>
-             <p>
-             <input type="submit" value="J'achète !" />
-             </p>
+            <button name="bouton">J'achète !</button>
             </form>
     </body>
 </html>
