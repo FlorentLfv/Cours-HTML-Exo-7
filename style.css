@@ -1,40 +1,15 @@
-body {
-    font-family:"trebuchet ms",sans-serif;
-    font-size:90%;
-    }
-   form {
-    background-color:#FAFAFA;
-    padding:10px;
-    width:350px;
-    }
-   fieldset {
-    padding:20px;
-    margin-bottom:10px;
-    }
-   legend {
-    color:#a0522d;
-    font-weight:bold
-    }
-   label {
-    margin-top:20px;
-    display:block;
-    }
-   label.inline {
-    display:inline
-    }
-   input {
-    border:1px solid black;
-    background-color:#A6BEDE;
-    }
-   input[type=radio] {
-    margin-right:50px;
-    background-color:transparent;
-    border:none;
-    }
-   select, option {
-    background-color:#A6BEDE;
-    }
-   textarea {
-    border:1px solid black;
-    background-color:#A6BEDE;
-    }
+.form1, .legend1{
+    background-color: #2574a9;
+}
+
+.form2, .legend2{
+    background-color: #9a12b3;
+}
+
+.form3, .legend3{
+    background-color: #db0a5b;
+}
+#creditCardsList{
+    list-style: none;
+}
+
